@@ -1,0 +1,18 @@
+#Desenhando paramêtros
+
+entrada = input()
+numeros = [int(num) for num in entrada.split()]
+nova_lista = []
+
+
+while numeros:
+    print("-", str(numeros))
+    print("+", str(nova_lista))
+    menor_valor = min(numeros)
+    nova_lista.append(menor_valor)
+    numeros.remove(menor_valor)
+
+
+print("-", str(numeros))
+print("+", str(nova_lista))
+
